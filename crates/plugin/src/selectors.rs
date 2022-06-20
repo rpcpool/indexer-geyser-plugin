@@ -23,10 +23,7 @@ impl AccountSelector {
 
         let accounts = accounts
             .into_iter()
-            .map(|s| {
-                s.parse()
-                    .map(|k: Pubkey| k.to_bytes().to_vec().into_boxed_slice())
-            })
+            .map(|s| s.parse().map(Pubkey::to_bytes))
             .collect::<Result<_, _>>()
             .context("Failed to parse account keys")?;
 
