@@ -246,7 +246,7 @@ impl GeyserPlugin for GeyserPluginRabbitMq {
                                     write_version,
                                     slot,
                                     is_startup,
-                                }))
+                                }), &key.to_string())
                                 .await;
                             this.metrics.sends.log(1);
 
@@ -329,7 +329,8 @@ impl GeyserPlugin for GeyserPluginRabbitMq {
                             match process_instruction(&this.ins_sel, ins, &keys, slot) {
                                 Ok(Some(m)) => {
                                     this.spawn(|this| async move {
-                                        this.producer.send(m).await;
+                                        // @TODO figure out a better default here
+                                        this.producer.send(m, "").await;
                                         this.metrics.sends.log(1);
 
                                         Ok(())
