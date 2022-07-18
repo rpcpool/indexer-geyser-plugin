@@ -228,20 +228,6 @@ impl GeyserPlugin for GeyserPluginRabbitMq {
                             write_version,
                         } = *acct;
 
-                        if owner == TOKEN_KEY.as_ref()
-                            && data.len() == TokenAccount::get_packed_len()
-                        {
-                            let token_account = TokenAccount::unpack_from_slice(data);
-
-                            if let Ok(token_account) = token_account {
-                                if token_account.amount > 1
-                                    || this.token_addresses.contains(&token_account.mint)
-                                {
-                                    return Ok(());
-                                }
-                            }
-                        }
-
                         let key = Pubkey::new_from_array(pubkey.try_into()?);
                         let owner = Pubkey::new_from_array(owner.try_into()?);
                         let data = data.to_owned();
