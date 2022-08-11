@@ -13,7 +13,6 @@ use crate::{
 #[derive(Debug)]
 pub struct AccountSelector {
     owners: HashSet<[u8; 32]>,
-    accounts: HashSet<[u8; 32]>,
     startup: Option<bool>,
     token_addresses: Option<HashSet<Pubkey>>,
 }
