@@ -22,7 +22,6 @@ impl AccountSelector {
     pub fn from_config(config: Accounts) -> Result<Self> {
         let Accounts {
             owners,
-            accounts,
             all_tokens,
             startup,
         } = config;
