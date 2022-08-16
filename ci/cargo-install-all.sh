@@ -74,5 +74,9 @@ mkdir -p "$installDir/lib"
 
 cp -fv "target/$buildVariant/${GEYSER_PLUGIN_LIB}.$libExt" "$installDir"/lib/
 
+
+# Validate build is not dirty
+git status --porcelain
+
 echo "Done after $SECONDS seconds"
 

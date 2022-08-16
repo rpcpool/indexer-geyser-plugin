@@ -1,4 +1,5 @@
 /.vscode/
 /target
+/lib
 .env.local
 .DS_Store
