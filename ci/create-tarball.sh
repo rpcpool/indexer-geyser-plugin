@@ -48,4 +48,7 @@ echo --- Creating release tarball
   cp "${RELEASE_BASENAME}"/version.yml "${TARBALL_BASENAME}"-$TARGET.yml
 )
 
+# Validate build is not dirty
+git status --porcelain
+
 echo --- ok
