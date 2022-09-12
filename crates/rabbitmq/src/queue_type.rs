@@ -32,13 +32,14 @@ pub trait QueueType {
 pub enum Binding {
     Fanout,
     Direct(String),
+    RoutingKey,
 }
 
 #[cfg(feature = "consumer")]
 impl Binding {
     fn routing_key(&self) -> &str {
         match self {
-            Self::Fanout => "",
+            Self::Fanout | Self::RoutingKey => "",
             Self::Direct(k) => k.as_ref(),
         }
     }
@@ -86,7 +87,7 @@ impl<'a> QueueInfo<'a> {
             self.0.exchange.as_ref(),
             match self.0.binding {
                 Binding::Fanout => ExchangeKind::Fanout,
-                Binding::Direct(_) => ExchangeKind::Direct,
+                Binding::RoutingKey | Binding::Direct(_) => ExchangeKind::Direct,
             },
             ExchangeDeclareOptions::default(),
             FieldTable::default(),
@@ -105,11 +106,17 @@ impl<'a> QueueInfo<'a> {
         Ok(())
     }
 
-    pub(crate) async fn publish(self, chan: &Channel, data: &[u8]) -> Result<PublisherConfirm> {
+    pub(crate) async fn publish(
+        self,
+        chan: &Channel,
+        data: &[u8],
+        routing_key: &str,
+    ) -> Result<PublisherConfirm> {
         chan.basic_publish(
             self.0.exchange.as_ref(),
             match self.0.binding {
                 Binding::Fanout => "",
+                Binding::RoutingKey => routing_key,
                 Binding::Direct(ref s) => s,
             },
             BasicPublishOptions::default(),

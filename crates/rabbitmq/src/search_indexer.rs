@@ -62,7 +62,7 @@ impl QueueType {
             props: QueueProps {
                 exchange,
                 queue,
-                binding: Binding::Fanout,
+                binding: Binding::RoutingKey,
                 prefetch: 4096,
                 max_len_bytes: 100 * 1024 * 1024, // 100 MiB
                 auto_delete: suffix.is_debug(),
