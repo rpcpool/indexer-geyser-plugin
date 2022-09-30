@@ -279,7 +279,8 @@ impl<'a> QueueInfo<'a> {
             let mut queue_fields = FieldTable::default();
             queue_fields.insert(
                 "x-max-length-bytes".into(),
-                AMQPValue::LongLongInt(self.0.max_len_bytes),
+                // Top out length at 100 MiB
+                AMQPValue::LongLongInt(self.0.max_len_bytes.min(100 * 1024 * 1024)),
             );
 
             // TODO: add a true DL queue

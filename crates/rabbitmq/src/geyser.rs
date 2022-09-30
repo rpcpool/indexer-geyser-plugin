@@ -125,9 +125,9 @@ impl QueueType {
                 binding: Binding::Fanout,
                 prefetch: 4096,
                 max_len_bytes: if suffix.is_debug() || matches!(startup_type, StartupType::Normal) {
-                    512 * 1024 * 1024 // 512 MiB
+                    100 * 1024 * 1024 // 100 MiB
                 } else {
-                    12 * 1024 * 1024 * 1024 // 12 GiB
+                    8 * 1024 * 1024 * 1024 // 8 GiB
                 },
                 auto_delete: suffix.is_debug(),
                 retry: Some(RetryProps {
