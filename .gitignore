@@ -3,3 +3,5 @@
 /lib
 .env.local
 .DS_Store
+/solana-geyser-release-release
+solana-geyser-release-release*
