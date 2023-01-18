@@ -41,7 +41,7 @@ echo --- Creating release tarball
   export CHANNEL
 
   source ci/rust-version.sh stable
-  ci/cargo-install-all.sh stable "${RELEASE_BASENAME}"
+  ci/cargo-install-all.sh "+${rust_stable}" "${RELEASE_BASENAME}"
 
   tar cvf "${TARBALL_BASENAME}"-$TARGET.tar "${RELEASE_BASENAME}"
   bzip2 "${TARBALL_BASENAME}"-$TARGET.tar
