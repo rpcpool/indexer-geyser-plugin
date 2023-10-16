@@ -1,6 +1,6 @@
 [package]
 name = "holaplex-indexer-rabbitmq-geyser"
-version = "0.10.0"
+version = "0.10.0+solana.1.16.17"
 authors = [
   "ryans <ryans@holaplex.com>",
   "Dana <dana@step.finance>",
@@ -44,12 +44,12 @@ zstd = "0.12.3"
 # solana-metrics = { path = "../../../solana/metrics" }
 # solana-transaction-status = { path = "../../../solana/transaction-status" }
 
-solana-geyser-plugin-interface = { version = "=1.16.14" }
-solana-logger = { version = "=1.16.14" }
-solana-sdk = { version = "=1.16.14" }
-solana-program = { version = "=1.16.14" }
-solana-metrics = { version = "=1.16.14" }
-solana-transaction-status = { version = "=1.16.14" }
+solana-geyser-plugin-interface = { version = "=1.16.17" }
+solana-logger = { version = "=1.16.17" }
+solana-sdk = { version = "=1.16.17" }
+solana-program = { version = "=1.16.17" }
+solana-metrics = { version = "=1.16.17" }
+solana-transaction-status = { version = "=1.16.17" }
 
 spl-token = "=3.5.0"
 
