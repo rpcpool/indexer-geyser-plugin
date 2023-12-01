@@ -1580,7 +1580,7 @@ dependencies = [
 
 [[package]]
 name = "holaplex-indexer-rabbitmq"
-version = "0.10.0+solana.1.16.17"
+version = "0.10.0+solana.1.16.20"
 dependencies = [
  "base64 0.13.0",
  "clap",
@@ -1600,7 +1600,7 @@ dependencies = [
 
 [[package]]
 name = "holaplex-indexer-rabbitmq-geyser"
-version = "0.10.0+solana.1.16.17"
+version = "0.10.0+solana.1.16.20"
 dependencies = [
  "anyhow",
  "bs58",
@@ -3166,8 +3166,8 @@ dependencies = [
 
 [[package]]
 name = "solana-account-decoder"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "Inflector",
  "base64 0.21.4",
@@ -3190,8 +3190,8 @@ dependencies = [
 
 [[package]]
 name = "solana-address-lookup-table-program"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "bincode",
  "bytemuck",
@@ -3210,8 +3210,8 @@ dependencies = [
 
 [[package]]
 name = "solana-config-program"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "bincode",
  "chrono",
@@ -3223,8 +3223,8 @@ dependencies = [
 
 [[package]]
 name = "solana-frozen-abi"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "ahash 0.8.3",
  "blake3",
@@ -3255,8 +3255,8 @@ dependencies = [
 
 [[package]]
 name = "solana-frozen-abi-macro"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -3266,8 +3266,8 @@ dependencies = [
 
 [[package]]
 name = "solana-geyser-plugin-interface"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "log",
  "solana-sdk",
@@ -3277,8 +3277,8 @@ dependencies = [
 
 [[package]]
 name = "solana-logger"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "env_logger",
  "lazy_static",
@@ -3287,8 +3287,8 @@ dependencies = [
 
 [[package]]
 name = "solana-measure"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "log",
  "solana-sdk",
@@ -3296,8 +3296,8 @@ dependencies = [
 
 [[package]]
 name = "solana-metrics"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "crossbeam-channel",
  "gethostname",
@@ -3309,8 +3309,8 @@ dependencies = [
 
 [[package]]
 name = "solana-program"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "ark-bn254",
  "ark-ec",
@@ -3363,8 +3363,8 @@ dependencies = [
 
 [[package]]
 name = "solana-program-runtime"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "base64 0.21.4",
  "bincode",
@@ -3390,8 +3390,8 @@ dependencies = [
 
 [[package]]
 name = "solana-sdk"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "assert_matches",
  "base64 0.21.4",
@@ -3442,8 +3442,8 @@ dependencies = [
 
 [[package]]
 name = "solana-sdk-macro"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "bs58",
  "proc-macro2",
@@ -3454,8 +3454,8 @@ dependencies = [
 
 [[package]]
 name = "solana-transaction-status"
-version = "1.16.17"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.17-step-public#b035633f1ab5192d2978cc3a363fb1964ee31f2b"
+version = "1.16.20"
+source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.16.20-step-public#79cdaa8b7d82a8a1039c0b44cb393fa799a6e149"
 dependencies = [
  "Inflector",
  "base64 0.21.4",
@@ -3479,9 +3479,9 @@ dependencies = [
 
 [[package]]
 name = "solana-zk-token-sdk"
-version = "1.16.17"
+version = "1.16.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "278c08e13bc04b6940997602909052524a375154b00cf0bfa934359a3bb7e6f0"
+checksum = "e0c83eec033c30c95938905374292fb8a3559dd3dfb36d715624e5f8f41b078e"
 dependencies = [
  "aes-gcm-siv",
  "base64 0.21.4",
