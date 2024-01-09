@@ -1,6 +1,9 @@
 use std::{
     env,
-    sync::{mpsc, Arc},
+    sync::{
+        atomic::{AtomicUsize, Ordering},
+        mpsc, Arc,
+    },
 };
 
 use anyhow::Context;
@@ -188,7 +191,11 @@ impl GeyserPlugin for GeyserPluginRabbitMq {
 
         let rt = tokio::runtime::Builder::new_multi_thread()
             .enable_all()
-            .thread_name("geyser-rabbitmq")
+            .thread_name_fn(|| {
+                static ATOMIC_ID: AtomicUsize = AtomicUsize::new(0);
+                let id = ATOMIC_ID.fetch_add(1, Ordering::Relaxed);
+                format!("solGeyserRmq{id:02}")
+            })
             .worker_threads(jobs.limit)
             .max_blocking_threads(jobs.blocking.unwrap_or(jobs.limit))
             .build()
