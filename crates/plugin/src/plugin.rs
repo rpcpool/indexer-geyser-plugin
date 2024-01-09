@@ -1,5 +1,5 @@
 use std::{
-    env,
+    concat, env,
     sync::{
         atomic::{AtomicUsize, Ordering},
         mpsc, Arc,
@@ -102,7 +102,7 @@ impl GeyserPluginRabbitMq {
 
 impl GeyserPlugin for GeyserPluginRabbitMq {
     fn name(&self) -> &'static str {
-        "GeyserPluginRabbitMq"
+        concat!(env!("CARGO_PKG_NAME"), "-", env!("CARGO_PKG_VERSION"))
     }
 
     fn on_load(&mut self, cfg: &str) -> Result<()> {
