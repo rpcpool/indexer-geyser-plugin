@@ -1,6 +1,6 @@
 [package]
 name = "holaplex-indexer-rabbitmq-geyser"
-version = "0.11.0"
+version = "0.11.0+solana.1.17.15"
 authors = [
   "ryans <ryans@holaplex.com>",
   "Dana <dana@step.finance>",
