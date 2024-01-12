@@ -1,0 +1,32 @@
+{
+  "libpath": "/geyser/libholaplex_indexer_rabbitmq_geyser.so",
+  "amqp": {
+    "network": "mainnet",
+    "address": "amqp://guest:guest@rabbitmq:5672"
+  },
+  "jobs": {
+    "limit": 16
+  },
+  "metrics": {},
+  "chainProgress": {
+    "blockMeta": true,
+    "slotStatus": true
+  },
+  "accounts": {
+    "owners": {},
+    "pubkeys": {},
+    "startup": false
+  },
+  "instructions": {
+    "programs": {},
+    "allTokenCalls": true
+  },
+  "transactions": {
+    "programs": {
+      "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": "defi",
+      "11111111111111111111111111111111": "defi"
+    },
+    "pubkeys": {}
+  },
+  "datumProgramInclusions": {}
+}

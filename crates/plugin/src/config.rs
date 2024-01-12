@@ -26,6 +26,21 @@ pub struct Config {
     /// Unused but required by the validator to load the plugin
     #[allow(dead_code)]
     libpath: String,
+
+    /// Unused here but is in validator
+    #[allow(dead_code)]
+    datum_program_inclusions: Option<HashMap<String, DatumInclusion>>,
+}
+
+#[derive(Deserialize, Debug)]
+#[serde(rename_all = "camelCase", deny_unknown_fields)]
+struct DatumInclusion {
+    #[allow(dead_code)]
+    pre: Option<bool>,
+    #[allow(dead_code)]
+    post: Option<bool>,
+    #[allow(dead_code)]
+    length_exclusions: Option<Vec<usize>>,
 }
 
 #[serde_with::serde_as]
@@ -140,6 +155,7 @@ impl Config {
             instructions,
             transactions,
             libpath: _,
+            datum_program_inclusions: _,
         } = self;
 
         let acct =
@@ -150,5 +166,33 @@ impl Config {
             .context("Failed to create instruction selector")?;
 
         Ok((amqp, jobs, metrics, chain_progress, acct, ins, txs))
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use anyhow::Result;
+    use solana_program::pubkey::Pubkey;
+    use std::{fs, path::PathBuf};
+
+    use super::Config;
+
+    fn validate_config(path: PathBuf) -> Result<()> {
+        let file = fs::read(path)?;
+        let json = serde_json::from_slice::<Config>(&file)?;
+        for (key, _) in json.datum_program_inclusions.unwrap_or_default().iter() {
+            key.parse::<Pubkey>()?;
+        }
+        Ok(())
+    }
+
+    #[test]
+    fn validate_staging_config() -> Result<()> {
+        validate_config("./triton_config_dev.json".into())
+    }
+
+    #[test]
+    fn validate_live_config() -> Result<()> {
+        validate_config("./triton_config.json".into())
     }
 }

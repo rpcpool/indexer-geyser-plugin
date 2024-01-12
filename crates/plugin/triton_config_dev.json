@@ -32,6 +32,7 @@
           "TSWAPaqyCSx2KABk68Shruf4rp7CxcNi8hAsbdwmHbN": "sf",
           "mmm3XBJg5gk8XJxEKBvdgptZz6SgK4tXvn36sodowMc": "sf",
           "TCMPhJdwDryooaGtiocG1u3xcYbRpiJzb283XfCZsDp": "sf",
+          "SNPRohhBurQwrpwAptw1QYtpFdfEKitr4WSJ125cN1g": "sf",
           
           "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX": "defi",
           "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY": "defi",
@@ -44,5 +45,37 @@
           "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb": "defi"
       },
       "pubkeys": {}
+  },
+  "datumProgramInclusions": {
+    "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX": {
+        "post": true
+    },
+    "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY": {
+        "post": true
+    },
+    "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA": {
+        "post": true,
+        "lengthExclusions": [
+            165
+        ]
+    },
+    "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb": {
+        "post": true,
+        "lengthExclusions": [
+            182
+        ]
+    },
+    "hadeK9DLv9eA7ya5KCTqSvSvRZeJC3JgD5a9Y3CNbvu": {
+        "post": true
+    },
+    "mmm3XBJg5gk8XJxEKBvdgptZz6SgK4tXvn36sodowMc": {
+        "post": true
+    },
+    "TSWAPaqyCSx2KABk68Shruf4rp7CxcNi8hAsbdwmHbN": {
+        "post": true
+    },
+    "TCMPhJdwDryooaGtiocG1u3xcYbRpiJzb283XfCZsDp": {
+        "post": true
+    }
   }
 }

@@ -4,7 +4,6 @@ components = [
   "cargo",
   "clippy",
   "rust-analysis",
-  "rust-analyzer-preview",
   "rust-docs",
   "rust-src",
   "rust-std",
