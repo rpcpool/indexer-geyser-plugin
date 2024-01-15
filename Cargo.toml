@@ -28,10 +28,10 @@ inherits = "release"
 # strip = "symbols" # Not supported in the workspace toolchain version
 
 [patch.crates-io]
-solana-transaction-status = { git = "https://github.com/step-finance/solana.git", branch = "step-plugin-1.17.15-triton" }
-solana-sdk = { git = "https://github.com/step-finance/solana.git", branch = "step-plugin-1.17.15-triton" }
-solana-geyser-plugin-interface = { git = "https://github.com/step-finance/solana.git", branch = "step-plugin-1.17.15-triton" }
-solana-logger = { git = "https://github.com/step-finance/solana.git", branch = "step-plugin-1.17.15-triton" }
-solana-program = { git = "https://github.com/step-finance/solana.git", branch = "step-plugin-1.17.15-triton" }
-solana-metrics = { git = "https://github.com/step-finance/solana.git", branch = "step-plugin-1.17.15-triton" }
-solana-zk-token-sdk = { git = "https://github.com/step-finance/solana.git", branch = "step-plugin-1.17.15-triton" }
+solana-transaction-status = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.16-step" }
+solana-sdk = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.16-step" }
+solana-geyser-plugin-interface = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.16-step" }
+solana-logger = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.16-step" }
+solana-program = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.16-step" }
+solana-metrics = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.16-step" }
+solana-zk-token-sdk = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.16-step" }
