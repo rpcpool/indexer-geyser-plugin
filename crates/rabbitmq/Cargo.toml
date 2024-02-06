@@ -1,6 +1,6 @@
 [package]
 name = "holaplex-indexer-rabbitmq"
-version = "0.11.0+solana.1.17.16"
+version = "0.11.0+solana.1.17.20"
 authors = [
   "ryans <ryans@holaplex.com>",
   "Dana <dana@step.finance>",
@@ -40,9 +40,9 @@ serde_json = { version = "1.0.79" }
 # solana-geyser-plugin-interface = { path = "../../../solana/geyser-plugin-interface" }
 # solana-program = { path = "../../../solana/sdk/program", optional = true }
 
-solana-transaction-status = { version = "=1.17.16" }
-solana-geyser-plugin-interface = { version = "=1.17.16" }
-solana-program = { version = "=1.17.16", optional = true }
+solana-transaction-status = { version = "=1.17.20" }
+solana-geyser-plugin-interface = { version = "=1.17.20" }
+solana-program = { version = "=1.17.20", optional = true }
 
 strum = { version = "0.24.1", features = ["derive"] }
 thiserror = "1.0.30"
