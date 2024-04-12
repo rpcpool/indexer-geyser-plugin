@@ -1585,7 +1585,7 @@ dependencies = [
 
 [[package]]
 name = "holaplex-indexer-rabbitmq"
-version = "0.11.0+solana.1.17.24"
+version = "0.11.3+solana.1.17.28"
 dependencies = [
  "base64 0.13.0",
  "clap",
@@ -1605,7 +1605,7 @@ dependencies = [
 
 [[package]]
 name = "holaplex-indexer-rabbitmq-geyser"
-version = "0.11.0+solana.1.17.24"
+version = "0.11.3+solana.1.17.28"
 dependencies = [
  "anyhow",
  "bs58",
@@ -3170,8 +3170,8 @@ dependencies = [
 
 [[package]]
 name = "solana-account-decoder"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "Inflector",
  "base64 0.21.4",
@@ -3194,8 +3194,8 @@ dependencies = [
 
 [[package]]
 name = "solana-config-program"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "bincode",
  "chrono",
@@ -3207,8 +3207,8 @@ dependencies = [
 
 [[package]]
 name = "solana-frozen-abi"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "ahash 0.8.5",
  "blake3",
@@ -3236,8 +3236,8 @@ dependencies = [
 
 [[package]]
 name = "solana-frozen-abi-macro"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -3247,8 +3247,8 @@ dependencies = [
 
 [[package]]
 name = "solana-geyser-plugin-interface"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "log",
  "solana-sdk",
@@ -3258,8 +3258,8 @@ dependencies = [
 
 [[package]]
 name = "solana-logger"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "env_logger",
  "lazy_static",
@@ -3268,8 +3268,8 @@ dependencies = [
 
 [[package]]
 name = "solana-measure"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "log",
  "solana-sdk",
@@ -3277,8 +3277,8 @@ dependencies = [
 
 [[package]]
 name = "solana-metrics"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "crossbeam-channel",
  "gethostname",
@@ -3291,8 +3291,8 @@ dependencies = [
 
 [[package]]
 name = "solana-program"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "ark-bn254",
  "ark-ec",
@@ -3344,8 +3344,8 @@ dependencies = [
 
 [[package]]
 name = "solana-program-runtime"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "base64 0.21.4",
  "bincode",
@@ -3371,8 +3371,8 @@ dependencies = [
 
 [[package]]
 name = "solana-sdk"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "assert_matches",
  "base64 0.21.4",
@@ -3424,8 +3424,8 @@ dependencies = [
 
 [[package]]
 name = "solana-sdk-macro"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "bs58",
  "proc-macro2",
@@ -3442,8 +3442,8 @@ checksum = "468aa43b7edb1f9b7b7b686d5c3aeb6630dc1708e86e31343499dd5c4d775183"
 
 [[package]]
 name = "solana-transaction-status"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "Inflector",
  "base64 0.21.4",
@@ -3466,8 +3466,8 @@ dependencies = [
 
 [[package]]
 name = "solana-zk-token-sdk"
-version = "1.17.24"
-source = "git+https://github.com/rpcpool/solana-public.git?tag=v1.17.24-step#c7cb2afa90d5e798b9140fc4d2304d6a00f261d2"
+version = "1.17.28"
+source = "git+https://github.com/step-finance/solana.git?rev=731e9f3b2a192d1123212e49e2447d00c100a4a3#731e9f3b2a192d1123212e49e2447d00c100a4a3"
 dependencies = [
  "aes-gcm-siv",
  "base64 0.21.4",

@@ -28,10 +28,10 @@ inherits = "release"
 # strip = "symbols" # Not supported in the workspace toolchain version
 
 [patch.crates-io]
-solana-transaction-status = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.24-step" }
-solana-sdk = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.24-step" }
-solana-geyser-plugin-interface = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.24-step" }
-solana-logger = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.24-step" }
-solana-program = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.24-step" }
-solana-metrics = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.24-step" }
-solana-zk-token-sdk = { git = "https://github.com/rpcpool/solana-public.git", tag = "v1.17.24-step" }
+solana-geyser-plugin-interface = { git = 'https://github.com/step-finance/solana.git', rev = "731e9f3b2a192d1123212e49e2447d00c100a4a3" }
+solana-logger = { git = 'https://github.com/step-finance/solana.git', rev = "731e9f3b2a192d1123212e49e2447d00c100a4a3" }
+solana-metrics = { git = 'https://github.com/step-finance/solana.git', rev = "731e9f3b2a192d1123212e49e2447d00c100a4a3" }
+solana-program = { git = 'https://github.com/step-finance/solana.git', rev = "731e9f3b2a192d1123212e49e2447d00c100a4a3" }
+solana-sdk = { git = 'https://github.com/step-finance/solana.git', rev = "731e9f3b2a192d1123212e49e2447d00c100a4a3" }
+solana-transaction-status = { git = 'https://github.com/step-finance/solana.git', rev = "731e9f3b2a192d1123212e49e2447d00c100a4a3" }
+solana-zk-token-sdk = { git = 'https://github.com/step-finance/solana.git', rev = "731e9f3b2a192d1123212e49e2447d00c100a4a3" }
